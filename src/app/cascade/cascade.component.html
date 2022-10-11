@@ -1,0 +1,59 @@
+
+  <!-- <div>
+    <button>1</button>
+    <div></div>
+  
+    <button></button>
+    <div>2</div>
+
+    <button>3</button>
+    <div></div>
+  </div> -->
+ <form>  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <!-- <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>  -->
+      <button (click)=Cascading2() >1</button><br>
+      <button (click)=Cascading3() >2</button><br>
+      <button (click)=Cascading4()>3</button>
+    </div>
+  </div>
+<br>
+<br>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button2
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div>
+            <button (click)=Cascading1(i.value2) style="display:block;" *ngFor="let i of data3">
+                {{i.value2}}
+            </button>
+          </div>
+    </div> 
+  </div>
+  <br>
+  <br>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button3
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <!-- <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>  -->
+
+      <div>
+        <button style="display:block;" *ngFor="let i of data4">
+            {{i.value3}}
+        </button>
+      </div>
+
+    </div>
+  </div>
+</form>
+
